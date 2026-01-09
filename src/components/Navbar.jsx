@@ -22,7 +22,7 @@ function Navbar() {
     return (
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="container navbar-container">
-                <Link to="/" className="navbar-logo">
+                <Link to="/home" className="navbar-logo">
                     <div className="navbar-logo-icon">
                         <Scan size={22} />
                     </div>
@@ -32,8 +32,8 @@ function Navbar() {
                 <ul className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
                     <li>
                         <Link
-                            to="/"
-                            className={`navbar-link ${isActive('/') ? 'active' : ''}`}
+                            to="/home"
+                            className={`navbar-link ${isActive('/home') ? 'active' : ''}`}
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Home
